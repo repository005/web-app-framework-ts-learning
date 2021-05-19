@@ -1,7 +1,19 @@
-import { User } from './User';
+// import { User } from './User';
 
-const user = new User({});
-user.set({ age: 999 });
+// const user = new User({ name: 'Xana', age: 30 });
 
-console.log(user.get('name'));
-console.log(user.get('age'));
+// user.on('change', () => {
+//   console.log('change 1');
+// });
+// user.on('change', () => {
+//   console.log('change 1');
+// });
+// user.on('save', () => {
+//   console.log('save 1');
+// });
+
+// user.trigger('change')
+
+import axios from 'axios';
+
+axios.get('http://localhost:3000/users/1');
